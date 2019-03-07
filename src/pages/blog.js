@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Listing from '../components/Listing'
 import { ContentWrapper } from '../components/styles/shared'

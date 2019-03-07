@@ -42,6 +42,10 @@ module.exports = {
     // react plugin - options
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
+
+    //custom
+    'template-curly-spacing': 'off',
+    'space-before-function-paren': 'off',
   },
   parser: 'babel-eslint',
   parserOptions: {

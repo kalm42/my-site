@@ -1,13 +1,15 @@
 /* eslint template-curly-spacing: 0 */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. 
-    This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `kalm42`,
+    description: `I am a professional web developer located in Idaho Falls. I make one of a kind 
+    websites, progressive web aps that match your business or personal needs.`,
+    author: `@kalm42`,
+    siteUrl: 'https://kalm42.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,16 +17,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-sitemap',
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Kyle Alexander Lafayette Melton 42`,
+        short_name: `kalm42`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFF41E`,
+        theme_color: `#FFF41E`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -39,5 +41,18 @@ module.exports = {
         name: 'posts',
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Roboto'],
+        },
+      },
+    },
+    `gatsby-transformer-sharp`,
+    'gatsby-transformer-remark',
+
+    // Must be last in the array
+    'gatsby-plugin-netlify',
   ],
 }

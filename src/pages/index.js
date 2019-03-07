@@ -12,10 +12,6 @@ const IndexPage = () => (
     <Hero />
     <ContentWrapper>
       <h1>Who am I?</h1>
-      <p>40 Characters</p>
-      <p>0123456789012345678901234567890123456789</p>
-      <p>70 Characters</p>
-      <p>0123456789 123456789 123456789 123456789 123456789 123456789 123456789</p>
       <p>
         I am a professional web developer located in Idaho Falls. I make one of a kind websites,
         progressive web aps that match your business or personal needs. Every year more and more

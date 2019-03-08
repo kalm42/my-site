@@ -344,6 +344,11 @@ const terms = () => {
           We accept credit credit cards and paper checks. We use Stripe to process credit cards and
           Freshbooks to manage our billing.
         </p>
+        <p>Paper checks can be mailed to:</p>
+        <address>
+          2184 Channing Way # 417 <br />
+          Idaho Falls, ID 83404
+        </address>
         <h3 id="But-wheres-all-the-horrible-small-print">
           But where’s all the horrible small print?
         </h3>

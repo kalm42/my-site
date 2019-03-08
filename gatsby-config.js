@@ -1,4 +1,7 @@
 /* eslint template-curly-spacing: 0 */
+require('dotenv').config({
+  path: `.env.production`,
+})
 module.exports = {
   siteMetadata: {
     title: `kalm42`,
@@ -9,7 +12,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,7 +30,7 @@ module.exports = {
         background_color: `#FFF41E`,
         theme_color: `#FFF41E`,
         display: `minimal-ui`,
-        icon: `src/images/icons/favicon-32x32.png`, // This path is relative to the root of the site.
+        icon: `src/images/icons/favicon-32x32.png`, // This path is relative to the root of the site
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -47,6 +49,15 @@ module.exports = {
         google: {
           families: ['Roboto'],
         },
+      },
+    },
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: process.env.GATSBY_SENTRY_DSN,
+        environment: process.env.NODE_ENV,
+        enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
     `gatsby-transformer-sharp`,

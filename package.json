@@ -2,7 +2,7 @@
   "name": "gatsby-starter-default",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "author": "Kyle Melton <kalm42@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -13,6 +13,7 @@
     "gatsby-plugin-netlify": "^2.0.11",
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-robots-txt": "^1.4.0",
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sharp": "^2.0.21",
     "gatsby-plugin-sitemap": "^2.0.6",

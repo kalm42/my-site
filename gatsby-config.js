@@ -74,6 +74,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     'gatsby-transformer-remark',
+    `gatsby-plugin-robots-txt`,
 
     // Must be last in the array
     'gatsby-plugin-netlify',

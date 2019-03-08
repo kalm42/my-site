@@ -60,6 +60,18 @@ module.exports = {
         enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'kalm42.com',
+      },
+    },
     `gatsby-transformer-sharp`,
     'gatsby-transformer-remark',
 

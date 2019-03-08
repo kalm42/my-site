@@ -28,63 +28,63 @@ const terms = () => {
         <h2>Table of Contents</h2>
         <ol>
           <li>
-            <a href="So-in-short">So in short;</a>
+            <a href="#So-in-short">So in short;</a>
           </li>
           <li>
-            <a href="What-do-both-parties-agree-to">What do both parties agree to?</a>
+            <a href="#What-do-both-parties-agree-to">What do both parties agree to?</a>
           </li>
           <li>
-            <a href="Design">Design</a>
+            <a href="#Design">Design</a>
           </li>
           <li>
-            <a href="Text-content">Text content</a>
+            <a href="#Text-content">Text content</a>
           </li>
           <li>
-            <a href="Graphics-and-photographs">Graphics and photographs</a>
+            <a href="#Graphics-and-photographs">Graphics and photographs</a>
           </li>
           <li>
-            <a href="HTML-CSS-and-JavaScript">HTML, CSS and JavaScript</a>
+            <a href="#HTML-CSS-and-JavaScript">HTML, CSS and JavaScript</a>
           </li>
           <li>
-            <a href="Technical-support">Technical support</a>
+            <a href="#Technical-support">Technical support</a>
           </li>
           <li>
-            <a href="Hosting-Pricing">Hosting Pricing</a>
+            <a href="#Hosting-Pricing">Hosting Pricing</a>
           </li>
           <li>
-            <a href="Dangerous-Code">Dangerous Code</a>
+            <a href="#Dangerous-Code">Dangerous Code</a>
           </li>
           <li>
-            <a href="Claims-of-Violations-of-Copyright-Trademark-Patent-or-Trade-Secret">
+            <a href="#Claims-of-Violations-of-Copyright-Trademark-Patent-or-Trade-Secret">
               Claims of Violations of Copyright, Trademark, Patent or Trade Secret
             </a>
           </li>
           <li>
-            <a href="Search-engine-optimisation">Search engine optimisation (SEO)</a>
+            <a href="#Search-engine-optimisation">Search engine optimisation (SEO)</a>
           </li>
           <li>
-            <a href="Changes-and-revisions">Changes and revisions</a>
+            <a href="#Changes-and-revisions">Changes and revisions</a>
           </li>
           <li>
-            <a href="#Warrany-of-work">Warranty of work</a>
+            <a href="##Warrany-of-work">Warranty of work</a>
           </li>
           <li>
-            <a href="Legal-stuff">Legal stuff</a>
+            <a href="#Legal-stuff">Legal stuff</a>
           </li>
           <li>
-            <a href="Intellectual-property-rights">Intellectual property rights</a>
+            <a href="#Intellectual-property-rights">Intellectual property rights</a>
           </li>
           <li>
-            <a href="Displaying-our-work">Displaying our work</a>
+            <a href="#Displaying-our-work">Displaying our work</a>
           </li>
           <li>
-            <a href="Payment-schedule">Payment schedule</a>
+            <a href="#Payment-schedule">Payment schedule</a>
           </li>
           <li>
-            <a href="Payment-Methods">Payment Methods</a>
+            <a href="#Payment-Methods">Payment Methods</a>
           </li>
           <li>
-            <a href="But-wheres-all-the-horrible-small-print">
+            <a href="#But-wheres-all-the-horrible-small-print">
               But where’s all the horrible small print?
             </a>
           </li>

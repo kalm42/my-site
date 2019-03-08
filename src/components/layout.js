@@ -66,7 +66,10 @@ const Layout = ({ children }) => (
                   <Link to="/contact">Contact Us</Link>
                 </li>
                 <li>
-                  <Link to="/legal">Privacy Policy, Terms, and Conditions</Link>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link to="/terms">Terms and Conditions</Link>
                 </li>
               </ul>
             </div>

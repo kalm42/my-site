@@ -148,7 +148,7 @@ const terms = () => {
           We deliver pages developed from HTML markup, CSS stylesheets for styling and unobtrusive
           JavaScript for behaviours.
         </p>
-        <p>Browser testing</p>
+        <h4>Browser testing</h4>
         <p>
           Browser testing no longer means attempting to make a website look the same in browsers of
           different capabilities or on devices with different size screens. It does mean ensuring
@@ -161,7 +161,7 @@ const terms = () => {
           browsers unless we agreed separately. If you need an enhanced design for an older browser,
           we can provide a separate estimate for that.
         </p>
-        <p>Mobile browser testing</p>
+        <h4>Mobile browser testing</h4>
         <p>
           Testing using popular smaller screen devices is essential in ensuring that a person’s
           experience of a design is appropriate to the capabilities of the device they’re using. We
@@ -229,6 +229,11 @@ const terms = () => {
           everything you’ve told us you want to achieve, but we’re happy to be flexible. If you want
           to change your mind or add anything new, that won’t be a problem as we’ll provide a
           separate estimate for those additional weeks.
+        </p>
+        <p>
+          Before the project is completed you should review the entire site for content and
+          functionality. After the project is completed any and all changes or revisions will be
+          billed at a one hour minimum and every half hour after that.
         </p>
         <h3 id="Warranty-of-work">Warranty of work</h3>
         <p>

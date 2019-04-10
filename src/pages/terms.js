@@ -237,10 +237,11 @@ const terms = () => {
         </p>
         <h3 id="Warranty-of-work">Warranty of work</h3>
         <p>
-          If we are hosting your website we will warranty our work for one year. We do not warranty
-          any third party work. Any updates from third parties that break the website will not be
-          warrantied.
+          If we are hosting your website we will warranty our work for one year from the date the
+          site goes live.
         </p>
+        <p>We do not warranty any third party work.</p>
+        <p>Any updates from third parties that break the website will not be warrantied.</p>
         <p>If you are hosting the website yourself we do not warranty anything.</p>
         <h3 id="Legal-stuff">Legal stuff</h3>
         <p>

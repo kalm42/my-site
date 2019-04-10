@@ -17,7 +17,6 @@ const PostLayout = props => {
     <Layout>
       <SEO title={title} description={excerpt} />
       <ContentWrapper>
-        <h1>{title}</h1>
         <aside>
           <p>
             Time to read: {timeToRead} {timeToRead > 1 ? `minutes` : `minute`}

@@ -6,6 +6,8 @@ date: "2019-04-30"
 
 # How to Make a CSS Gradient
 
+![How to make a CSS Gradient](images/2019-04-30-how-to-make-a-css-gradient.png)
+
 The super simple top to bottom gradient.
 
 ```

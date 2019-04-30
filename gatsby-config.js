@@ -73,7 +73,19 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-robots-txt`,
 
     // Must be last in the array

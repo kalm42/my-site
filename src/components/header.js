@@ -1,6 +1,7 @@
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import Img from 'gatsby-image'
 import styled from 'styled-components'
 import Nav from './Nav'
 
@@ -24,14 +25,34 @@ const Logo = styled(Link)`
 `
 
 const Header = ({ siteTitle }) => (
-  <HeaderWrapper>
-    <HeaderContainer>
-      <h1 style={{ margin: 0, fontWeight: 100 }}>
-        <Logo to="/">{siteTitle}</Logo>
-      </h1>
-      <Nav />
-    </HeaderContainer>
-  </HeaderWrapper>
+  <StaticQuery
+    query={graphql`
+      query HEADER_LOGO_IMAGE_QUERY {
+        file(relativePath: { regex: "/kalm-icon/" }) {
+          childImageSharp {
+            fixed(height: 36) {
+              ...GatsbyImageSharpFixed_tracedSVG
+            }
+          }
+        }
+      }
+    `}
+    render={data => {
+      const image = data.file.childImageSharp.fixed
+      return (
+        <HeaderWrapper>
+          <HeaderContainer>
+            <h1 style={{ margin: 0, fontWeight: 100 }}>
+              <Logo to="/">
+                <Img fixed={image} /> kalm42
+              </Logo>
+            </h1>
+            <Nav />
+          </HeaderContainer>
+        </HeaderWrapper>
+      )
+    }}
+  />
 )
 
 Header.propTypes = {

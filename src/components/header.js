@@ -42,7 +42,13 @@ const Header = ({ siteTitle }) => (
       return (
         <HeaderWrapper>
           <HeaderContainer>
-            <h1 style={{ margin: 0, fontWeight: 100 }}>
+            <h1
+              style={{
+                margin: 0,
+                fontWeight: 100,
+                fontSize: 'var(--font-size-4)',
+                lineHeight: 'var(--line-height-4)',
+              }}>
               <Logo to="/">
                 <Img fixed={image} /> kalm42
               </Logo>

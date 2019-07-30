@@ -51,6 +51,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-sentry',

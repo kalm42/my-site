@@ -2,10 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
+import 'normalize.css'
 
+import '../shared/styles.scss'
 import Header from './header'
 import ErrorBoundary from './ErrorBoundary'
-import './global.css'
 
 const Footer = styled.footer`
   padding: 1rem;

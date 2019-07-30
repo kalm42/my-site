@@ -212,7 +212,6 @@ export const LightAccentDarker = styled.div`
 export const DarkAccent = styled.div`
   padding: 2rem;
   background: var(--darkaccent);
-  color: var(--lightshade);
   border-radius: var(--borderradius);
   box-shadow: var(--shallowboxshadow);
   margin: 0.7rem 0;

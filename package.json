@@ -2,7 +2,7 @@
   "name": "@kalm42/my-site",
   "private": true,
   "description": "My client facing site for soliciting web development work.",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": "Kyle Melton <kalm42@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",

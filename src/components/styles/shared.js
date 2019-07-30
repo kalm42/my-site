@@ -6,6 +6,7 @@ export const Theme = {
 
 export const ContentWrapper = styled.main`
   max-width: 700px;
+  width: 100%;
   margin: 1.45rem auto;
   @media screen and (max-width: 900px) {
     padding: 0 calc(5vw);

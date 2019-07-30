@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
+import { LinkButton } from '../shared/styledComponents'
 
 const LISTING_QUERY = graphql`
   query LISTING_QUERY {
@@ -27,14 +28,14 @@ const LISTING_QUERY = graphql`
 `
 
 const Post = styled.article`
-  box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.05);
+  box-shadow: var(--shallowboxshadow);
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: var(--borderradius);
   margin-bottom: 1rem;
+  background: var(--lightaccent-lighter);
   a {
-    color: #000;
     text-decoration: none;
-
+    color: var(--darkshade);
     &:hover {
       text-decoration: underline;
     }
@@ -48,12 +49,12 @@ const Listing = () => {
       render={data => {
         return data.allMarkdownRemark.edges.map(({ node }) => (
           <Post key={node.frontmatter.slug}>
-            <h2>
+            <h3>
               <Link to={`/posts${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
-            </h2>
+            </h3>
             <p>{node.frontmatter.date}</p>
             <p>{node.excerpt}</p>
-            <Link to={`/posts${node.frontmatter.slug}`}>Read More</Link>
+            <LinkButton to={`/posts${node.frontmatter.slug}`}>Read More</LinkButton>
           </Post>
         ))
       }}

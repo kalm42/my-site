@@ -1,16 +1,10 @@
-# 🚀 Quick start
+# kalm42.com Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/97fb0834-d9fd-448d-8cb7-09838884c9b3/deploy-status)](https://app.netlify.com/sites/kalm42/deploys)
 
-1.  **Start developing.**
+## Instructions
 
-    Navigate into the root directory and start it up.
+To develop push a version live you will need an account with sentry.io and google analytics. Go get accounts with them.
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+Copy the .env.sample to .env.development or .env.production which ever is relevant. Fill in the missing information with the codes given to you by sentry.io and google.
 
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Install the dependencies and you're good to go. Have fun, I hope this starting point helpped you.

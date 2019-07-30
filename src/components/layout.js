@@ -7,10 +7,11 @@ import 'normalize.css'
 import '../shared/styles.scss'
 import Header from './header'
 import ErrorBoundary from './ErrorBoundary'
+import { Input, Label, SubmitButton, DarkAccent } from '../shared/styledComponents'
 
 const Footer = styled.footer`
   padding: 1rem;
-  background: #fff41e;
+  background: var(--primary);
   margin-top: 1.45rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -74,17 +75,20 @@ const Layout = ({ children }) => (
                 </li>
               </ul>
             </div>
-            <div>
+            <DarkAccent>
               <h5>Subscribe to my email list</h5>
               <form
                 name="subscribe"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field">
-                <input type="text" name="email" placeholder="Your email" />
-                <input type="submit" value="Subscribe" />
+                <Label htmlFor="emailNetlify">
+                  Email Address
+                  <Input type="text" name="email" id="emailNetlify" placeholder="Your email" />
+                </Label>
+                <SubmitButton type="submit" value="Subscribe" />
               </form>
-            </div>
+            </DarkAccent>
           </Footer>
         </Wrapper>
       )}

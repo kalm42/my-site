@@ -1,0 +1,163 @@
+@mixin max-tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin min-tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin phone-landscape-to-tablet {
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet-to-desktop {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @content;
+  }
+}
+@mixin min-desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin max-desktop {
+  @media screen and (max-width: 1279px) {
+    @content;
+  }
+}
+@mixin desktop-to-hd {
+  @media screen and (min-width: 1280px) and (max-width: 2999px) {
+    @content;
+  }
+}
+@mixin min-hd {
+  @media screen and (min-width: 3000px) {
+    @content;
+  }
+}
+
+:root {
+  /* Use this color as the background for your dark-on-light designs, or the 
+  text color of an inverted design. */
+  --lightshade: #F0F5F1;
+  --lightshade-darker: #D7DBD8;
+  --lightshade-lighter: #ffffff;
+  /* Accent colors can be used to bring attention to design elements by 
+  contrasting with the rest of the palette. */
+  --lightaccent: #2A95BF;
+  --lightaccent-darker: #1C6380;
+  --lightaccent-lighter: #38C5FF;
+  /* This color should be eye-catching but not harsh. Can be liberally applied 
+  to your layout as the main identity. */
+  --primary: #FFF41E;
+  --primary-darker: #BFB717;
+  --primary-lighter: #FFFF05;
+  /* Another accent color to consider. Not all colors have to be used sometimes 
+  a simple color scheme works best. */
+  --darkaccent: #D13E49;
+  --darkaccent-darker: #912C32;
+  --darkaccent-lighter: #DE434D;
+  /* Use as the text color for dark-on-light designs, or as the background for 
+  inverted designs. */
+  --darkshade: #202C3A;
+  --darkshade-darker: #1B2530;
+  --darkshade-lighter: #4A6787;
+  /* Other UI Styles and colors */
+  --grey: #cdcdc0;
+  --success: #88b04b;
+  --warning: #ff6c2f;
+  --danger: #ba0020;
+  --deepboxshadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(54, 19, 19, 0.2);
+  --shallowboxshadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  --font-family: 'Roboto', Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 
+  'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', 
+  Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --headline-font-family: 'Roboto', Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 
+  'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', 
+  Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --maxwidth: 1000px;
+  --borderradius: 5px;
+
+  /* scale for 1.2 */
+  --font-size-1: 1rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: 1.44rem;
+  --font-size-4: 1.728rem;
+  --font-size-5: 2.074rem;
+  --font-size-6: 2.488rem;
+  /* scale for 1.2 */
+  --line-height-1: 1.2rem;
+  --line-height-2: 1.44rem;
+  --line-height-3: 1.728rem;
+  --line-height-4: 2.074rem;
+  --line-height-5: 2.488rem;
+  --line-height-6: 2.986rem;
+}
+
+
+@include min-tablet() {
+  :root {
+    /* scale for 1.33 */
+    --font-size-1: 1rem;
+    --font-size-2: 1.333rem;
+    --font-size-3: 1.777rem;
+    --font-size-4: 2.369rem;
+    --font-size-5: 3.157rem;
+    --font-size-6: 4.209rem;
+    /* scale for 1.33 */
+    --line-height-1: 1.333rem;
+    --line-height-2: 1.777rem;
+    --line-height-3: 2.369rem;
+    --line-height-4: 3.157rem;
+    --line-height-5: 4.209rem;
+    --line-height-6: 5.598rem;
+  }
+}
+// Base styles
+html {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--darkshade);
+}
+p {
+  line-height: var(--line-height-1);
+}
+h1 {
+  line-height: var(--line-height-6);
+  font-size: var(--font-size-6);
+}
+h2 {
+  line-height: var(--line-height-5);
+  font-size: var(--font-size-5);
+}
+h3 {
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-4);
+}
+h4 {
+  line-height: var(--line-height-3);
+  font-size: var(--font-size-3);
+}
+h5 {
+  line-height: var(--line-height-2);
+  font-size: var(--font-size-2);
+}
+h6 {
+  line-height: var(--line-height-1);
+  font-size: var(--font-size-1);
+}
+pre {
+  overflow: scroll;
+  background: var(--darkaccent);
+  padding: 1rem;
+  border-radius: var(--borderradius);
+  color: var(--darkshade);
+}
+a {
+  color: var(--darkaccent);
+}

@@ -1,5 +1,6 @@
 ---
 slug: "/how-to-require-child-props-in-react"
+path: "/posts/how-to-require-child-props-in-react"
 title: "How to Require Child Props in React"
 date: "2019-05-06"
 ---

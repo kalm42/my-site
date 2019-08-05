@@ -1,5 +1,6 @@
 ---
 slug: "/git-clean-up"
+path: "/posts/git-clean-up"
 title: "Remove All Your Local Git Branches"
 date: "2019-02-19"
 ---

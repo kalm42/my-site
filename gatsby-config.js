@@ -11,6 +11,7 @@ module.exports = {
     siteUrl: 'https://kalm42.com',
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -41,6 +42,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/posts`,
         name: 'posts',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/blog`,
+        name: 'blog',
       },
     },
     {

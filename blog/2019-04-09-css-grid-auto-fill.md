@@ -1,5 +1,6 @@
 ---
 slug: "/css-grid-fill"
+path: "/blog/css-grid-fill"
 title: "How to Fill In CSS Grid with Auto-Fitting Content"
 date: "2019-04-09"
 ---

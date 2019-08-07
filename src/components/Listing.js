@@ -7,7 +7,7 @@ const LISTING_QUERY = graphql`
   query LISTING_QUERY {
     allMarkdownRemark(limit: 10, filter: {
       fileAbsolutePath: {
-        regex: "/posts/*.*\\.md$/"
+        regex: "/blog/*.*\\.md$/"
       }
     }, sort: {
       order: DESC
@@ -18,6 +18,7 @@ const LISTING_QUERY = graphql`
           frontmatter {
             title
             slug
+            path
             date(formatString: "MMMM DD, YYYY")
           }
           excerpt
@@ -50,11 +51,11 @@ const Listing = () => {
         return data.allMarkdownRemark.edges.map(({ node }) => (
           <Post key={node.frontmatter.slug}>
             <h3>
-              <Link to={`/posts${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
+              <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
             </h3>
             <p>{node.frontmatter.date}</p>
             <p>{node.excerpt}</p>
-            <LinkButton to={`/posts${node.frontmatter.slug}`}>Read More</LinkButton>
+            <LinkButton to={node.frontmatter.path}>Read More</LinkButton>
           </Post>
         ))
       }}

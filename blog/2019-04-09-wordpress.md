@@ -1,6 +1,6 @@
 ---
 slug: "/why-not-to-use-wordpress"
-path: "/posts/why-not-to-use-wordpress"
+path: "/blog/why-not-to-use-wordpress"
 title: "Why Not To Use WordPress"
 date: "2019-04-09"
 ---

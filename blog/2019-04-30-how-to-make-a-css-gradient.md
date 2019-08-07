@@ -1,8 +1,9 @@
 ---
-slug: "/how-to-make-a-css-gradient"
-path: "/blog/how-to-make-a-css-gradient"
-title: "How to Make a CSS Gradient"
-date: "2019-04-30"
+path: /blog/how-to-make-a-css-gradient
+slug: /how-to-make-a-css-gradient
+date: '2019-04-30'
+featured_image: /assets/2019-04-30-how-to-make-a-css-gradient.png
+title: How to Make a CSS Gradient
 ---
 
 # How to Make a CSS Gradient

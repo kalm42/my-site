@@ -12,6 +12,7 @@ collections:
       - { name: path, label: Path }
       - { name: slug, label: Slug }
       - { name: date, label: Date, widget: date }
+      - { name: featured_image, label: "Featured Image", widget: image, required: false }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
   - name: portfolio
@@ -22,5 +23,6 @@ collections:
       - { name: path, label: Path }
       - { name: slug, label: Slug }
       - { name: date, label: Date, widget: date }
+      - { name: featured_image, label: "Featured Image", widget: image, required: false }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }

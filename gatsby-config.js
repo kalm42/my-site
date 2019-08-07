@@ -56,6 +56,14 @@ module.exports = {
       options: {
         path: `${__dirname}/portfolio`,
         name: 'portfolio',
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+            },
+          },
+        ],
       },
     },
     {

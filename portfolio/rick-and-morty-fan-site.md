@@ -1,5 +1,6 @@
 ---
 path: /portfolio/rick-and-morty
+slug: /rick-and-morty
 date: 2019-08-07T18:00:04.444Z
 title: Rick and Morty Fan Site
 ---

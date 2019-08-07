@@ -2,6 +2,7 @@
 path: /portfolio/rick-and-morty
 slug: /rick-and-morty
 date: 2019-08-07T18:00:04.444Z
+featured_image: /assets/kyle-and-shelly-wedding-multi-device-mockup.png
 title: Rick and Morty Fan Site
 ---
 A [friend](http://completewebdesignsolution.com/) of mine and I were playing around with the [Rick and Morty API](https://rickandmortyapi.com/) - if you enjoy playing around with API's like I do then you should check it out. Anyway, we ended up making a fun little website that lets you search for Rick and Morty characters and see more details about them.

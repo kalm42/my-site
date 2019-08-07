@@ -52,6 +52,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/portfolio`,
+        name: 'portfolio',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {

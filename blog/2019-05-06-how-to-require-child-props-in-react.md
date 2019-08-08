@@ -2,6 +2,7 @@
 slug: "/how-to-require-child-props-in-react"
 path: "/blog/how-to-require-child-props-in-react"
 title: "How to Require Child Props in React"
+featured_image: /assets/2019-04-30-how-to-make-a-css-gradient.png
 date: "2019-05-06"
 ---
 

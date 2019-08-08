@@ -2,6 +2,7 @@
 slug: "/css-grid-fill"
 path: "/blog/css-grid-fill"
 title: "How to Fill In CSS Grid with Auto-Fitting Content"
+featured_image: /assets/2019-04-30-how-to-make-a-css-gradient.png
 date: "2019-04-09"
 ---
 

@@ -2,6 +2,7 @@
 slug: "/git-clean-up"
 path: "/blog/git-clean-up"
 title: "Remove All Your Local Git Branches"
+featured_image: /assets/2019-04-30-how-to-make-a-css-gradient.png
 date: "2019-02-19"
 ---
 

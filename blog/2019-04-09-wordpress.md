@@ -2,6 +2,7 @@
 slug: "/why-not-to-use-wordpress"
 path: "/blog/why-not-to-use-wordpress"
 title: "Why Not To Use WordPress"
+featured_image: /assets/2019-04-30-how-to-make-a-css-gradient.png
 date: "2019-04-09"
 ---
 

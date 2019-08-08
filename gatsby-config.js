@@ -21,7 +21,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sitemap',
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -49,6 +48,11 @@ module.exports = {
       options: {
         path: `${__dirname}/portfolio`,
         name: 'portfolio',
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
         plugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -57,6 +61,14 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-remark-images`,
+      options: {
+        maxWidth: 700,
       },
     },
     {
@@ -87,20 +99,6 @@ module.exports = {
         sampleRate: 5,
         siteSpeedSampleRate: 10,
         cookieDomain: 'kalm42.com',
-      },
-    },
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 700,
-            },
-          },
-        ],
       },
     },
     `gatsby-plugin-robots-txt`,

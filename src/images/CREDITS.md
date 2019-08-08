@@ -1,6 +1,7 @@
 ---
 slug: "/photo-credits"
 title: "Photo Credits"
+featured_image: /assets/2019-04-30-how-to-make-a-css-gradient.png
 date: "2019-02-28"
 ---
 

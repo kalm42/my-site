@@ -20,6 +20,7 @@ const LISTING_QUERY = graphql`
             slug
             path
             date(formatString: "MMMM DD, YYYY")
+            featured_image
           }
           excerpt
         }
@@ -50,6 +51,7 @@ const Listing = () => {
       render={data => {
         return data.allMarkdownRemark.edges.map(({ node }) => (
           <Post key={node.frontmatter.slug}>
+            {node.frontmatter.featured_image && <img src={node.frontmatter.featured_image} />}
             <h3>
               <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
             </h3>

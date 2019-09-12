@@ -8,7 +8,7 @@ const Hamburger = styled.div`
   position: relative;
   margin: 16px;
   transform: rotate(0deg);
-  transition .5s ease-in-out;
+  transition: .5s ease-in-out;
   cursor: pointer;
 
   span {
@@ -91,7 +91,7 @@ const StyledLink = styled(Link)`
   cursor: pointer;
   position: relative;
   color: #fff;
-  text-decoration: none:
+  text-decoration: none;
 
   &:after {
     bottom: 0;

@@ -9,6 +9,7 @@ import '../shared/styles.scss'
 import Header from './header'
 import ErrorBoundary from './ErrorBoundary'
 import { Input, Label, SubmitButton, DarkAccent } from '../shared/styledComponents'
+import Calendly from './Calendly'
 
 const Footer = styled.footer`
   padding: 1rem;
@@ -47,22 +48,7 @@ const Layout = ({ children }) => (
       render={data => (
         <Wrapper>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <Helmet>
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-              <script
-                src="https://assets.calendly.com/assets/external/widget.js"
-                type="text/javascript"></script>
-              <script type="text/javascript">
-                Calendly.initBadgeWidget({ 
-                  url: 'https://calendly.com/kylemelton', 
-                  text: 'Schedule time with me', 
-                  color: '#00a2ff', 
-                  textColor: '#ffffff', 
-                  branding: true 
-                })
-              </script>
-            </link>
-          </Helmet>
+          <Calendly />
           {children}
           <Footer>
             <div>

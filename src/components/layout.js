@@ -90,6 +90,25 @@ const Layout = ({ children }) => (
               </form>
             </DarkAccent>
           </Footer>
+          {`
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+              <script src="https://assets.calendly.com/assets/external/widget.js" 
+                type="text/javascript"
+              >
+              </script>
+              <script 
+                type="text/javascript"
+              >
+                Calendly.initBadgeWidget({ 
+                  url: 'https://calendly.com/kylemelton', 
+                  text: 'Schedule time with me', 
+                  color: '#00a2ff', 
+                  textColor: '#ffffff', 
+                  branding: true 
+                });
+              </script>
+            </link>
+          `}
         </Wrapper>
       )}
     />

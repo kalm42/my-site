@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import 'normalize.css'
@@ -46,6 +47,22 @@ const Layout = ({ children }) => (
       render={data => (
         <Wrapper>
           <Header siteTitle={data.site.siteMetadata.title} />
+          <Helmet>
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+              <script
+                src="https://assets.calendly.com/assets/external/widget.js"
+                type="text/javascript"></script>
+              <script type="text/javascript">
+                Calendly.initBadgeWidget({ 
+                  url: 'https://calendly.com/kylemelton', 
+                  text: 'Schedule time with me', 
+                  color: '#00a2ff', 
+                  textColor: '#ffffff', 
+                  branding: true 
+                })
+              </script>
+            </link>
+          </Helmet>
           {children}
           <Footer>
             <div>
@@ -90,25 +107,6 @@ const Layout = ({ children }) => (
               </form>
             </DarkAccent>
           </Footer>
-          {`
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-              <script src="https://assets.calendly.com/assets/external/widget.js" 
-                type="text/javascript"
-              >
-              </script>
-              <script 
-                type="text/javascript"
-              >
-                Calendly.initBadgeWidget({ 
-                  url: 'https://calendly.com/kylemelton', 
-                  text: 'Schedule time with me', 
-                  color: '#00a2ff', 
-                  textColor: '#ffffff', 
-                  branding: true 
-                });
-              </script>
-            </link>
-          `}
         </Wrapper>
       )}
     />

@@ -23,12 +23,13 @@ const loadCalendly = callback => {
   if (exists && callback) callback()
 }
 
-const Calendly = () => {
+const CalendlyComponent = () => {
   const [calendlyIsLoaded, setCalendlyIsLoaded] = useState(false)
 
   useEffect(() => {
     loadCalendly(() => {
       setCalendlyIsLoaded(true)
+      // eslint-disable-next-line no-undef
       Calendly.initBadgeWidget({
         url: 'https://calendly.com/kylemelton',
         text: 'Schedule time with me',
@@ -37,8 +38,8 @@ const Calendly = () => {
         branding: true,
       })
     })
-  })
+  }, {})
   return null
 }
 
-export default Calendly
+export default CalendlyComponent

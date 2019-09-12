@@ -9,7 +9,7 @@ import '../shared/styles.scss'
 import Header from './header'
 import ErrorBoundary from './ErrorBoundary'
 import { Input, Label, SubmitButton, DarkAccent } from '../shared/styledComponents'
-import Calendly from './Calendly'
+import CalendlyComponent from './Calendly'
 
 const Footer = styled.footer`
   padding: 1rem;
@@ -48,7 +48,7 @@ const Layout = ({ children }) => (
       render={data => (
         <Wrapper>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <Calendly />
+          <CalendlyComponent />
           {children}
           <Footer>
             <div>

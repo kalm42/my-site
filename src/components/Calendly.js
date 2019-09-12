@@ -1,15 +1,12 @@
 // Thanks to this blog
 // https://cleverbeagle.com/blog/articles/tutorial-how-to-load-third-party-scripts-dynamically-in-javascript
-import React, { Component, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
+import Helmet from 'react-helmet'
 
 const loadCalendly = callback => {
   const exists = document.getElementById('calendly')
 
   if (!exists) {
-    const link = document.createElement('link')
-    link.src = 'https://assets.calendly.com/assets/external/widget.css'
-    document.body.appendChild(link)
-
     const script = document.createElement('script')
     script.src = 'https://assets.calendly.com/assets/external/widget.js'
     script.id = 'calendly'
@@ -39,7 +36,11 @@ const CalendlyComponent = () => {
       })
     })
   }, {})
-  return null
+  return (
+    <Helmet>
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></link>
+    </Helmet>
+  )
 }
 
 export default CalendlyComponent

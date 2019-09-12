@@ -1,3 +1,10 @@
+---
+slug: "/resources"
+path: "/blog/resources"
+title: "Resources I Use"
+date: "2019-09-12"
+---
+
 # Resources
 
 # Blogs

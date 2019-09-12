@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import 'normalize.css'
@@ -8,6 +9,7 @@ import '../shared/styles.scss'
 import Header from './header'
 import ErrorBoundary from './ErrorBoundary'
 import { Input, Label, SubmitButton, DarkAccent } from '../shared/styledComponents'
+import CalendlyComponent from './Calendly'
 
 const Footer = styled.footer`
   padding: 1rem;
@@ -46,6 +48,7 @@ const Layout = ({ children }) => (
       render={data => (
         <Wrapper>
           <Header siteTitle={data.site.siteMetadata.title} />
+          <CalendlyComponent />
           {children}
           <Footer>
             <div>

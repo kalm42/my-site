@@ -7,7 +7,7 @@ import { ContentWrapper } from '../components/styles/shared'
 const BlogLayout = props => {
   const {
     markdownRemark: {
-      frontmatter: { title },
+      frontmatter: { title, featured_image: featuredImage },
       html,
       excerpt,
       timeToRead,
@@ -17,6 +17,7 @@ const BlogLayout = props => {
     <Layout>
       <SEO title={title} description={excerpt} />
       <ContentWrapper>
+        {featuredImage && <img style={{ width: '100%' }} src={featuredImage} alt={title} />}
         <aside>
           <p>
             Time to read: {timeToRead} {timeToRead > 1 ? `minutes` : `minute`}
@@ -37,6 +38,7 @@ export const query = graphql`
         title
         slug
         date
+        featured_image
       }
       excerpt
       timeToRead

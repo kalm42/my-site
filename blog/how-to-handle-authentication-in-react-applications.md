@@ -19,7 +19,7 @@ On load we will check for a token in local storage and attempt to fetch data abo
 
 `./src/context/auth-context.js`
 
-```
+```javascript
 import React from 'react'
 import { useQuery, useMutation } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'

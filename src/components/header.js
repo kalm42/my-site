@@ -3,20 +3,17 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import Nav from './Nav'
 
-const HeaderWrapper = styled.div`
+const H = styled.header`
   background: #fff41e;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-`
-
-const HeaderContainer = styled.div`
-  margin: 0 auto;
-  padding: 1rem 1rem;
   display: grid;
-  grid-template-columns: 1fr 80px;
+  grid-template-columns: 1fr 3vw;
+  align-items: center;
+  padding: 1vw 4vw;
+
+  h1 {
+    font-weight: 900;
+  }
 `
 
 const Logo = styled(Link)`
@@ -40,22 +37,13 @@ const Header = ({ siteTitle }) => (
     render={data => {
       const image = data.file.childImageSharp.fixed
       return (
-        <HeaderWrapper>
-          <HeaderContainer>
-            <h1
-              style={{
-                margin: 0,
-                fontWeight: 100,
-                fontSize: 'var(--font-size-4)',
-                lineHeight: 'var(--line-height-4)',
-              }}>
-              <Logo to="/">
-                <Img fixed={image} /> kalm42
-              </Logo>
+        <H>
+          <Logo to="/">
+            <h1>
+              <Img fixed={image} /> kalm42
             </h1>
-            <Nav />
-          </HeaderContainer>
-        </HeaderWrapper>
+          </Logo>
+        </H>
       )
     }}
   />

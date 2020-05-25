@@ -35,7 +35,7 @@ const CalendlyComponent = () => {
         branding: true,
       })
     })
-  }, {})
+  }, [])
   return (
     <Helmet>
       <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></link>

@@ -1,8 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import Layout from './layout'
 import SEO from './seo'
-import { ContentWrapper } from './styles/shared'
+
+const ContentWrapper = styled.main`
+  max-width: 700px;
+  margin: 1.45em auto;
+  @media screen and (max-width: 900px) {
+    padding: 0 calc(5vw);
+  }
+`
 
 const PostLayout = props => {
   const {

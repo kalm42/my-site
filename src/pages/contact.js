@@ -1,8 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { ContentWrapper } from '../components/styles/shared'
 import { Label, Input, SubmitButton, DarkAccent, Textarea } from '../shared/styledComponents'
+
+const ContentWrapper = styled.main`
+  max-width: 700px;
+  margin: 1.45em auto;
+  @media screen and (max-width: 900px) {
+    padding: 0 calc(5vw);
+  }
+`
 
 const contact = () => {
   return (
@@ -35,13 +43,7 @@ const contact = () => {
             </Label>
             <Label htmlFor="message">
               Your message
-              <Textarea
-                name="message"
-                cols="30"
-                rows="10"
-                id="message"
-                placeholder="Type your message here."
-              />
+              <Textarea name="message" cols="30" rows="10" id="message" placeholder="Type your message here." />
             </Label>
             <SubmitButton type="submit" value="Send" />
           </form>

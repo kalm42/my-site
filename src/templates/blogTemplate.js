@@ -1,8 +1,16 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { ContentWrapper } from '../components/styles/shared'
+
+const ContentWrapper = styled.main`
+  max-width: 700px;
+  margin: 1.45em auto;
+  @media screen and (max-width: 900px) {
+    padding: 0 calc(5vw);
+  }
+`
 
 const BlogLayout = props => {
   const {

@@ -1,14 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import 'normalize.css'
-
 import '../shared/styles.scss'
 import Header from './header'
 import ErrorBoundary from './ErrorBoundary'
-import { Input, Label, SubmitButton, DarkAccent } from '../shared/styledComponents'
 import CalendlyComponent from './Calendly'
 
 const Footer = styled.footer`
@@ -27,11 +24,7 @@ const Footer = styled.footer`
   }
 `
 
-const Wrapper = styled.div`
-  min-height: calc(100vh);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-`
+const Wrapper = styled.div``
 
 const Layout = ({ children }) => (
   <ErrorBoundary>
@@ -62,36 +55,8 @@ const Layout = ({ children }) => (
                 <br />
                 Idaho Falls, ID 83404
               </address>
-              <p>© {new Date().getFullYear()} kalm42, Inc.</p>
+              <p>© {new Date().getFullYear()} Kyle Melton</p>
             </div>
-            <div>
-              <h5>Customer Service</h5>
-              <ul>
-                <li>
-                  <Link to="/contact">Contact Us</Link>
-                </li>
-                <li>
-                  <Link to="/privacy-policy">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link to="/terms">Terms and Conditions</Link>
-                </li>
-              </ul>
-            </div>
-            <DarkAccent>
-              <h5>Subscribe to my email list</h5>
-              <form
-                name="subscribe"
-                method="post"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field">
-                <Label htmlFor="emailNetlify">
-                  Email Address
-                  <Input type="text" name="email" id="emailNetlify" placeholder="Your email" />
-                </Label>
-                <SubmitButton type="submit" value="Subscribe" />
-              </form>
-            </DarkAccent>
           </Footer>
         </Wrapper>
       )}

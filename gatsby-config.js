@@ -4,9 +4,8 @@ require('dotenv').config({
 })
 module.exports = {
   siteMetadata: {
-    title: `kalm42`,
-    description: `I am a professional web developer located in Idaho Falls. I make one of a kind 
-    websites, progressive web aps that match your business or personal needs.`,
+    title: `Kyle Melton`,
+    description: `A professional JavaScript developer.`,
     author: `@kalm42`,
     siteUrl: 'https://kalm42.com',
   },
@@ -39,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Kyle Alexander Lafayette Melton 42`,
+        name: `Kyle Melton Blog`,
         short_name: `kalm42`,
         start_url: `/`,
         background_color: `#FFF41E`,
@@ -70,7 +69,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto:100,200,300,400,500,600,700,800,900'],
+          families: ['Inter:100,200,300,400,500,600,700,800,900'],
         },
       },
     },

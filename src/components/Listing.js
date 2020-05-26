@@ -28,20 +28,7 @@ const LISTING_QUERY = graphql`
   }
 `
 
-const Post = styled.article`
-  box-shadow: var(--shallowboxshadow);
-  padding: 1rem;
-  border-radius: var(--borderradius);
-  margin-bottom: 1rem;
-  background: var(--lightaccent-lighter);
-  a {
-    text-decoration: none;
-    color: var(--darkshade);
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-`
+const Post = styled.article``
 
 const Listing = () => {
   return (

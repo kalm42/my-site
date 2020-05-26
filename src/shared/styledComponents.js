@@ -117,29 +117,7 @@ export const RadioInput = styled.input`
   }
 `
 
-export const LinkButton = styled(Link)`
-  width: 100%;
-  padding: 1rem;
-  margin: 2rem 0;
-  border-radius: var(--borderradius);
-  border: none;
-  box-shadow: var(--deepboxshadow);
-  background: var(--primary);
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-
-  &:active {
-    box-shadow: var(--shallowboxshadow);
-    background: var(--primary-darker);
-  }
-
-  &:focus {
-    outline: none;
-    background: var(--primary-darker);
-  }
-`
+export const LinkButton = styled(Link)``
 
 export const Danger = styled.div`
   padding: 2rem;

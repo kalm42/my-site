@@ -3,26 +3,12 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import Nav from './Nav'
 
-const HeaderWrapper = styled.div`
-  background: #fff41e;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-`
+const HeaderWrapper = styled.div``
 
-const HeaderContainer = styled.div`
-  margin: 0 auto;
-  padding: 1rem 1rem;
-  display: grid;
-  grid-template-columns: 1fr 80px;
-`
+const HeaderContainer = styled.div``
 
-const Logo = styled(Link)`
-  color: #000000;
-  text-decoration: none;
-`
+const Logo = styled(Link)``
 
 const Header = ({ siteTitle }) => (
   <StaticQuery
@@ -53,7 +39,6 @@ const Header = ({ siteTitle }) => (
                 <Img fixed={image} /> kalm42
               </Logo>
             </h1>
-            <Nav />
           </HeaderContainer>
         </HeaderWrapper>
       )

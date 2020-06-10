@@ -1,36 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
-import 'normalize.css'
-
-import '../shared/styles.scss'
 import Header from './header'
 import ErrorBoundary from './ErrorBoundary'
-import { Input, Label, SubmitButton, DarkAccent } from '../shared/styledComponents'
 import CalendlyComponent from './Calendly'
+import 'normalize.css'
+import '../shared/styles.scss'
 
-const Footer = styled.footer`
-  padding: 1rem;
-  background: var(--primary);
-  margin-top: 1.45rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  grid-gap: 20px;
-  @media screen and (max-width: 900px) {
-    grid-template-columns: 1fr;
-  }
-
-  a {
-    color: #000;
-  }
-`
+const Footer = styled.footer``
 
 const Wrapper = styled.div`
-  min-height: calc(100vh);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  max-width: 500px;
+  width: 80vw;
+  margin: 0 auto;
 `
 
 const Layout = ({ children }) => (
@@ -58,18 +41,14 @@ const Layout = ({ children }) => (
                 <br />
                 <a href="tel:+208-357-9649">(208)357-9649</a>
                 <br />
-                2184 Channing Way # 417
+                2763 E Brooklyn St
                 <br />
-                Idaho Falls, ID 83404
+                Idaho Falls, ID 83401
               </address>
               <p>© {new Date().getFullYear()} kalm42, Inc.</p>
             </div>
             <div>
-              <h5>Customer Service</h5>
               <ul>
-                <li>
-                  <Link to="/contact">Contact Us</Link>
-                </li>
                 <li>
                   <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
@@ -78,20 +57,6 @@ const Layout = ({ children }) => (
                 </li>
               </ul>
             </div>
-            <DarkAccent>
-              <h5>Subscribe to my email list</h5>
-              <form
-                name="subscribe"
-                method="post"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field">
-                <Label htmlFor="emailNetlify">
-                  Email Address
-                  <Input type="text" name="email" id="emailNetlify" placeholder="Your email" />
-                </Label>
-                <SubmitButton type="submit" value="Subscribe" />
-              </form>
-            </DarkAccent>
           </Footer>
         </Wrapper>
       )}

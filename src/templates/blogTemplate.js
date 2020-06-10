@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { ContentWrapper } from '../components/styles/shared'
 
 const BlogLayout = props => {
   const {
@@ -16,15 +15,13 @@ const BlogLayout = props => {
   return (
     <Layout>
       <SEO title={title} description={excerpt} />
-      <ContentWrapper>
-        {featuredImage && <img style={{ width: '100%' }} src={featuredImage} alt={title} />}
-        <aside>
-          <p>
-            Time to read: {timeToRead} {timeToRead > 1 ? `minutes` : `minute`}
-          </p>
-        </aside>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </ContentWrapper>
+      {featuredImage && <img style={{ width: '100%' }} src={featuredImage} alt={title} />}
+      <aside>
+        <p>
+          Time to read: {timeToRead} {timeToRead > 1 ? `minutes` : `minute`}
+        </p>
+      </aside>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }

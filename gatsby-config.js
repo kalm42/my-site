@@ -52,25 +52,10 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/portfolio`,
-        name: 'portfolio',
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 700,
-            },
-          },
-        ],
-      },
-    },
-    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto:100,200,300,400,500,600,700,800,900'],
+          families: ['EB Garamond:400,500,600,700,800', 'Roboto Mono:400'],
         },
       },
     },

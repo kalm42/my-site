@@ -1,13 +1,13 @@
 ---
-slug: "/resources"
-path: "/blog/resources"
-title: "Resources I Use"
-date: "2019-09-12"
+path: /blog/resources
+slug: /resources
+date: '2019-09-12'
+title: Resources I Use
 ---
 
 # Resources
 
-# Blogs
+## Blogs
 
 - [Dan Abramov](https://overreacted.io/)
 
@@ -78,3 +78,7 @@ Purchase repeating pattern assets.
 ## Image Optimization
 
 - [SVG OMG](https://jakearchibald.github.io/svgomg/)
+
+## Web Based Tools
+
+- [Canva](https://www.canva.com/)
